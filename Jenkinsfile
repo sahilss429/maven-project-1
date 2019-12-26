@@ -13,6 +13,12 @@ pipeline {
       }
     }
 
+    stage('Validate'){
+      steps {
+        echo "Validating..."
+      }
+    }
+
     stage('Deploy'){
       steps {
         echo "Deploying..."
